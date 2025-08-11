@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADHD-Friendly ChatGPT Day Manager (With Quick Bedtime Option)</title>
+<style>
+  :root { --bg:#ffffff; --ink:#111; --muted:#555; --brand:#0b6efd; --card:#f6f7fb; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+  header { padding:20px 16px; background:var(--card); border-bottom:1px solid #e5e7eb; }
+  h1 { margin:0 0 6px; font-size:clamp(1.2rem, 3.5vw, 1.8rem); }
+  main { max-width:850px; margin:0 auto; padding:18px 16px 48px; }
+  h2 { font-size:1.15rem; margin:22px 0 8px; }
+  p, li { font-size:1rem; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px; margin:12px 0; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; background:#f3f4f6; padding:.08rem .35rem; border-radius:6px; }
+  ul { margin:8px 0 8px 22px; }
+  .steps ol { margin:8px 0 8px 22px; }
+  .tip { font-size:.95rem; color:var(--muted); }
+  .cta { display:inline-block; margin-top:10px; padding:10px 14px; background:var(--brand); color:#fff; border-radius:8px; text-decoration:none; }
+  .times li { margin:4px 0; }
+  pre { white-space: pre-wrap; }
+  footer { color:var(--muted); font-size:.9rem; padding:18px 16px; border-top:1px solid #e5e7eb; text-align:center; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>ADHD-Friendly ChatGPT Day Manager</h1>
+    <div class="tip">Starter prompt + example reminder times. Optimised for phones.</div>
+  </header>
+  <main>
+    <section class="card steps">
+      <h2>Step 1 — Create or Log In</h2>
+      <ol>
+        <li>Go to <span class="mono">https://chat.openai.com</span></li>
+        <li>Sign in or create a free/Plus account.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Step 2 — Paste This Starter Prompt</h2>
+      <p>Copy everything in the box and paste it into a new ChatGPT chat:</p>
+      <pre class="mono">
+You are my personal day manager.
+I have ADHD and sometimes struggle with prioritising tasks, remembering things, and staying on track.
+
+Here is what I need from you each day:
+1. Morning check-in — Ask me how I am feeling, what is already on my mind, and if there are fixed-time events today.
+2. Prioritise & plan — Help me list my tasks in priority order and break big ones into small, 20- to 40-minute steps.
+3. Time reminders — Nudge me at agreed times to start or switch tasks. Be encouraging and upbeat.
+4. Distraction rescue — If I tell you I am distracted, help me refocus by reminding me of my current task.
+5. Evening review — Ask me what I completed, what is left, and help me roll over unfinished tasks to tomorrow.
+6. Bedtime wind-down — Around 11:00 PM, guide me to relax and prepare for sleep with a calm tone.
+
+Important:
+- Keep instructions simple, short, and positive.
+- Celebrate progress, even small wins.
+- If I feel overwhelmed, help me pick just one small, easy win to start.
+- Check in on breaks, hydration, and snacks if I have been working a while.
+
+Let's start with today's check-in.
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Step 3 — Activate Reminders</h2>
+      <p>Say these to ChatGPT (or change the times to what works for you):</p>
+      <ul class="times">
+        <li><strong>9:00 AM BST</strong> — “Set up a daily automation to start my ADHD check-in at 9:00 AM BST.”</li>
+        <li><strong>1:00 PM BST</strong> — “Set up a daily automation to check in on my progress at 1:00 PM BST.”</li>
+        <li><strong>3:00 PM BST</strong> — “Set up a daily automation to help me refocus at 3:00 PM BST.”</li>
+        <li><strong>5:30 PM BST</strong> — “Set up a daily automation to do my daily wrap-up at 5:30 PM BST.”</li>
+        <li><strong>11:00 PM BST</strong> — “Set up a daily automation to help me wind down for bedtime at 11:00 PM BST.”</li>
+      </ul>
+      <p class="tip">Tip: Pin the conversation in ChatGPT so it is always easy to find.</p>
+    </section>
+
+    <section class="card">
+      <h2>Bedtime Wind-Down Script</h2>
+      <pre>
+Hi Gavin, it’s time to start winding down for the night.
+
+Let’s make sure you’re ready for rest:
+1. Wrap up any last tasks — save your place or make a quick note for tomorrow.
+2. Dim the lights and switch to a softer, warmer tone if you can.
+3. Put away screens — phone, TV, computer — so your mind can relax.
+4. Grab a drink of water or herbal tea (no caffeine).
+5. Try a 2-minute breathing exercise: breathe in slowly for 4 seconds, hold for 4, breathe out for 6, pause for 2, then repeat.
+
+Now, imagine the day’s thoughts drifting away like leaves floating down a stream. You don’t need to hold onto them — tomorrow will take care of itself.
+
+You’ve done enough for today. You are enough. Rest well. 🌙
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Quick Bedtime Wind-Down (Tired Nights)</h2>
+      <pre>
+Alright Gavin, let’s make this quick so you can rest:
+
+1. Put your phone down now.
+2. Dim the lights.
+3. Take three deep, slow breaths.
+4. Lie down, close your eyes, and think of one good thing from today.
+
+That’s it — no more thinking. Sleep well. 🌙
+      </pre>
+    </section>
+
+    <section class="card">
+      <h2>Suggested Timing Ideas</h2>
+      <ul>
+        <li>Start-of-day planning before work or school</li>
+        <li>Mid-morning focus check to prevent drift</li>
+        <li>Post-lunch reset to overcome afternoon slump</li>
+        <li>Pre-evening wind-down review to prepare for tomorrow</li>
+        <li>Late-night calming routine to support healthy sleep</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Optional — Customise the Routine</h2>
+      <ul>
+        <li>Shorter focus sprints: try 20–25 minutes on, 5 minutes off.</li>
+        <li>Energy check: if overwhelmed, ask for one tiny starter task.</li>
+        <li>Accountability: ask for a quick end-of-day summary you can text to a friend.</li>
+        <li>Bedtime wind-down ideas: breathing exercises, dimming lights, gentle music, avoid screens.</li>
+      </ul>
+    </section>
+
+    <a class="cta" href="https://chat.openai.com" target="_blank" rel="noopener">Open ChatGPT</a>
+  </main>
+  <footer>Made for Gavin • Works on any phone • Adjust times to suit your day</footer>
+</body>
+</html>
